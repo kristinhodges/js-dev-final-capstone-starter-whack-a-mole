@@ -9,27 +9,6 @@ let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
 
-/** ADD MUSIC 
-function playAudio(audioObject) {
-  audioObject.play();
-}
-
-function loopAudio(audioObject) {
-  audioObject.loop = true;
-  playAudio(audioObject);
-}
-
-function stopAudio(audioObject) {
-  audioObject.pause();
-}
-
-function play(){
-  playAudio(song);
-}
-*/
-
-
-
 
 
 
