@@ -9,10 +9,34 @@ let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
 
-/**
+/** ADD MUSIC 
+function playAudio(audioObject) {
+  audioObject.play();
+}
 
-Generates a random integer within a range.
+function loopAudio(audioObject) {
+  audioObject.loop = true;
+  playAudio(audioObject);
+}
+
+function stopAudio(audioObject) {
+  audioObject.pause();
+}
+
+function play(){
+  playAudio(song);
+}
 */
+
+
+
+
+
+
+
+
+/**Generates a random integer within a range.*/
+
 function randomInteger(min, max) {
 return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -95,6 +119,7 @@ function toggleVisibility(hole) {
 if (hole) {
 hole.classList.toggle('show');
 }
+return hole;
 }
 
 /**
@@ -143,16 +168,15 @@ return timer;
 /**
 
 This is the event handler that gets called when a player clicks on a mole.
-/
-/*
+
+
 
 This is the event handler that gets called when a player clicks on a mole.
 */
 function whack(event) {
-if (event && event.target && event.target.classList.contains('mole')) {
-points=updateScore();
-}
-return points;
+  document.getElementById('moles');
+  updateScore();
+  return points;
 }
 
 /**
