@@ -29,10 +29,8 @@ function setDelay(difficulty) {
   return 1000; 
   } else if (difficulty === "hard") { 
   return randomInteger(600, 1200); 
-  } else { 
-  throw new Error("Invalid difficulty value"); 
   } 
-  } 
+}
 
 
 /**
@@ -94,7 +92,7 @@ Adds or removes the 'show' class to a given hole.
 Adds or removes the 'show' class to a given hole.
 */
 function toggleVisibility(hole) {
-if (hole) {
+  if (hole){
 hole.classList.toggle('show');
 }
 return hole;
