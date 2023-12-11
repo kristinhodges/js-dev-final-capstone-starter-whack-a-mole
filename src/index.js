@@ -11,9 +11,6 @@ let difficulty = "hard";
 
 
 
-
-
-
 /**Generates a random integer within a range.*/
 
 function randomInteger(min, max) {
@@ -24,17 +21,19 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 
 Sets the time delay given a difficulty parameter.
 */
-function setDelay(difficulty) {
-if (difficulty === "easy") {
-return 1500;
-} else if (difficulty === "normal") {
-return 1000;
-} else if (difficulty === "hard") {
-return randomInteger(600, 1200);
-} else {
-throw new Error("Invalid difficulty value");
-}
-}
+function setDelay(difficulty) { 
+
+  if (difficulty === "easy") { 
+  return 1500; 
+  } else if (difficulty === "normal") { 
+  return 1000; 
+  } else if (difficulty === "hard") { 
+  return randomInteger(600, 1200); 
+  } else { 
+  throw new Error("Invalid difficulty value"); 
+  } 
+  } 
+
 
 /**
 
